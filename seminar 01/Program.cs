@@ -19,9 +19,10 @@
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-// Solutions––––––––––––––––––––––––––––––––––––––
+// Solutions––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 //Task 2:
+//––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input first number, please:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
@@ -47,6 +48,7 @@
 
 
 //Task 4:
+//––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input first number:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
@@ -82,6 +84,7 @@
 
 
 //Task 6:
+//––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input number:");
 // int num = Convert.ToInt32(Console.ReadLine());
@@ -98,6 +101,7 @@
 
 
 //Task 8:
+//––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input number:");
 // int num = Convert.ToInt32(Console.ReadLine());
@@ -117,6 +121,7 @@
 
 
 //Task 8(2):
+//––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input number:");
 // int num = Convert.ToInt32(Console.ReadLine());
