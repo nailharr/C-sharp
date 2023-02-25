@@ -22,28 +22,83 @@
 // Solutions––––––––––––––––––––––––––––––––––––––
 
 //Task 2:
-Console.Clear();
-Console.WriteLine("Input first number, please:");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"You first input -> {num1}");
-Console.WriteLine("Input second number, please:");
-int num2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"You second input -> {num2}");
-int max = 0;
-int min = 0;
+// Console.Clear();
+// Console.WriteLine("Input first number, please:");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"You first input -> {num1}");
+// Console.WriteLine("Input second number, please:");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine($"You second input -> {num2}");
+// int max = 0;
+// int min = 0;
 
-if (num1 > num2)
-{
-    max = num1;
-    min = num2;
-}
-else
-{
-    max = num2;
-    min = num1;
-}
-Console.WriteLine($"Maximum number -> {max}");
-Console.WriteLine($"Minimum number -> {min}");
+// if (num1 > num2)
+// {
+//     max = num1;
+//     min = num2;
+// }
+// else
+// {
+//     max = num2;
+//     min = num1;
+// }
+// Console.WriteLine($"Maximum number -> {max}");
+// Console.WriteLine($"Minimum number -> {min}");
 
 
 //Task 4:
+// Console.Clear();
+// Console.WriteLine("Input first number:");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input second number:");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input third number:");
+// int num3 = Convert.ToInt32(Console.ReadLine());
+// int max = 0;
+
+// if (num1 > num2)
+// {
+//     if (num1 > num3)
+//     {
+//         max = num1;
+//     }
+//     else
+//     {
+//         max = num3;
+//     }
+// }
+// else
+// {
+//     if (num2 > num3)
+//     {
+//         max = num2;
+//     }
+//     else 
+//     {
+//         max = num3;
+//     }
+// }
+// Console.WriteLine($"Maximum number -> {max}");
+
+
+//Task 6:
+// Console.Clear();
+// Console.WriteLine("Input number:");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num % 2 == 0)
+// {
+//     Console.WriteLine("Nubmer is even");
+// }
+// else 
+// {
+//     Console.WriteLine("Nubmer is odd");
+// }
+
+
+
+//Task 8:
+Console.Clear();
+Console.WriteLine("Input number:");
+int num = Convert.ToInt32(Console.ReadLine());
+
