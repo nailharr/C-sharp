@@ -86,7 +86,7 @@
 //Task 6:
 //––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
-// Console.WriteLine("Input number:");
+// Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
 
 // if (num % 2 == 0)
@@ -103,7 +103,7 @@
 //Task 8:
 //––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
-// Console.WriteLine("Input number:");
+// Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
 // int current = 2;
 
@@ -123,7 +123,7 @@
 //Task 8(2):
 //––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
-// Console.WriteLine("Input number:");
+// Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Even numbers from 1 to " + num + ":");
 // for (int i = 2; i <= num; i += 2) 
