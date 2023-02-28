@@ -1,0 +1,15 @@
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/bin/Debug/net6.0/seminar 02
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/bin/Debug/net6.0/seminar 02.deps.json
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/bin/Debug/net6.0/seminar 02.runtimeconfig.json
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/bin/Debug/net6.0/seminar 02.dll
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/bin/Debug/net6.0/seminar 02.pdb
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.csproj.AssemblyReference.cache
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.AssemblyInfoInputs.cache
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.AssemblyInfo.cs
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.csproj.CoreCompileInputs.cache
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.dll
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/refint/seminar 02.dll
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.pdb
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/seminar 02.genruntimeconfig.cache
+/Volumes/MX/SCHOOL/GeekBrains_Developer_code/CSharp/C-sharp/seminar 02/obj/Debug/net6.0/ref/seminar 02.dll
