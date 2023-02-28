@@ -1,4 +1,6 @@
-﻿// Урок 1. Знакомство с языком программирования С#
+﻿// See https://aka.ms/new-console-template for more information
+Console.WriteLine("Hello, World!");
+// Урок 1. Знакомство с языком программирования С#
 
 // Задача 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
 // a = 5; b = 7 -> max = 7
@@ -21,8 +23,8 @@
 
 // Solutions––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
-//Task 2:
-//––––––––––––––––––––––––––––––––––––––
+//Task 2: Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input first number, please:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
@@ -47,8 +49,8 @@
 // Console.WriteLine($"Minimum number -> {min}");
 
 
-//Task 4:
-//––––––––––––––––––––––––––––––––––––––
+//Task 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input first number:");
 // int num1 = Convert.ToInt32(Console.ReadLine());
@@ -83,25 +85,25 @@
 // Console.WriteLine($"Maximum number -> {max}");
 
 
-//Task 6:
-//––––––––––––––––––––––––––––––––––––––
+//Task 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
 
 // if (num % 2 == 0)
 // {
-//     Console.WriteLine("Nubmer is even");
+//     Console.WriteLine("Number is even");
 // }
 // else 
 // {
-//     Console.WriteLine("Nubmer is odd");
+//     Console.WriteLine("Number is odd");
 // }
 
 
 
-//Task 8:
-//––––––––––––––––––––––––––––––––––––––
+//Task 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
@@ -121,7 +123,7 @@
 
 
 //Task 8(2):
-//––––––––––––––––––––––––––––––––––––––
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 // Console.Clear();
 // Console.WriteLine("Input a number:");
 // int num = Convert.ToInt32(Console.ReadLine());
