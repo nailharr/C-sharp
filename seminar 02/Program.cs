@@ -4,21 +4,21 @@
 // 85 -> 8
 
 // START // ————————————————————————————————————————————————————————————————————————
-int BiggestDigit (int num)
-{
-    int ed = num % 10;
-    int dec = num / 10;
+// int BiggestDigit(int num)
+// {
+//     int ed = num % 10;
+//     int dec = num / 10;
 
-    if (dec > ed) return dec;
-    else return ed;
-}
+//     if (dec > ed) return dec;
+//     else return ed;
+// }
 
-int randomnum = new Random().Next(10, 100); //or 99+1
-int result = BiggestDigit(randomnum);
-Console.WriteLine($"Biggest digit of {randomnum} -> {result}");
+// int randomnum = new Random().Next(10, 100); //or 99+1
+// int result = BiggestDigit(randomnum);
+// Console.WriteLine($"Biggest digit of {randomnum} -> {result}");
 
 // ————————————————————————————————————————————————————————————————————————// END //
- 
+
 
 
 
@@ -29,17 +29,17 @@ Console.WriteLine($"Biggest digit of {randomnum} -> {result}");
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-int DeletDigit(int num)
-{
-    int sot = num / 100;
-    int ed = num % 10;
-    return sot * 10 + ed;
-}
+// int DeletDigit(int num)
+// {
+//     int sot = num / 100;
+//     int ed = num % 10;
+//     return sot * 10 + ed;
+// }
 
-int rndmnmbr = new Random().Next(100, 1000); //or 99+1
+// int rndmnmbr = new Random().Next(100, 1000); //or 99+1
 
-Console.WriteLine(rndmnmbr);
-Console.WriteLine(DeletDigit(rndmnmbr));
+// Console.WriteLine(rndmnmbr);
+// Console.WriteLine(DeletDigit(rndmnmbr));
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
@@ -51,15 +51,15 @@ Console.WriteLine(DeletDigit(rndmnmbr));
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-bool KratNum(int num)
-{
-    return num % 7 == 0 && num % 23 == 0;
-}
+// bool KratNum(int num)
+// {
+//     return num % 7 == 0 && num % 23 == 0;
+// }
 
-int randomnumber = new Random().Next(1, 1000);
-randomnumber = 161;
-Console.WriteLine(randomnumber);
-Console.WriteLine(KratNum(randomnumber));
+// int randomnumber = new Random().Next(1, 1000);
+// randomnumber = 161;
+// Console.WriteLine(randomnumber);
+// Console.WriteLine(KratNum(randomnumber));
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
@@ -71,19 +71,19 @@ Console.WriteLine(KratNum(randomnumber));
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-bool Quad(int num1, int num2)
-{
-    return num1 * num1 == num2 | num2 * num2 == num1;
-}
+// bool Quad(int num1, int num2)
+// {
+//     return num1 * num1 == num2 | num2 * num2 == num1;
+// }
 
-int randomnum1 = new Random().Next(1, 1000);
-int randomnum2 = new Random().Next(1, 1000);
+// int randomnum1 = new Random().Next(1, 1000);
+// int randomnum2 = new Random().Next(1, 1000);
 
-// randomnum1 = 25;
-// randomnum2 = 5;
-Console.WriteLine(randomnum1);
-Console.WriteLine(randomnum2);
-Console.WriteLine(Quad(randomnum1, randomnum2));
+// // randomnum1 = 25;
+// // randomnum2 = 5;
+// Console.WriteLine(randomnum1);
+// Console.WriteLine(randomnum2);
+// Console.WriteLine(Quad(randomnum1, randomnum2));
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
@@ -96,39 +96,40 @@ Console.WriteLine(Quad(randomnum1, randomnum2));
 // 34, 5 -> не кратно, остаток 4
 // 16, 4  -> кратно
 
-// START // ————————————————————————————————————————————————————————————————————————
+// START // ———————————————————————————————————————————————————————————————————————— 1
 
 int Krat(int num1, int num2)
 {
     int res = num1 % num2;
     return res;
-}
-
-int randomnum01 = new Random().Next(minValue: 1, maxValue: 1000);
-int randomnum02 = new Random().Next(minValue: 1, maxValue: 1000);
+}   
+   
+int randomnum1 = new Random().Next(1, 1000);
+int randomnum2 = new Random().Next(1, 1000);
 
 //randomnum1 = 16;
 //randomnum2 = 4;
-//Console.WriteLine(randomnum1);
-//Console.WriteLine(randomnum2);
+Console.WriteLine(randomnum1);
+Console.WriteLine(randomnum2);
 //Console.WriteLine(Krat(randomnum1, randomnum2));
 
+if (Krat(randomnum1, randomnum2) == 0) Console.WriteLine($"Кратно");
+else Console.WriteLine($"не кратно, {Krat(randomnum1, randomnum2)}");
 
 
-void Krat(int num1, int num2)
-{
-    int res = num1 % num2;
-    if (res == 0) Console.WriteLine($"Кратно");
-    else Console.WriteLine($"не кратно, {res}");
-}
+// START // ———————————————————————————————————————————————————————————————————————— 2
 
-if (Krat(randomnum01, randomnum02) == 0) Console.WriteLine($"Кратно");
-else 
-Console.WriteLine(value: $"не кратно, {Krat(randomnum01, randomnum02)}");
 
-int num1 = Convert.ToInt32(Console.ReadLine());
-int num2 = Convert.ToInt32(Console.ReadLine());
+// void Krat(int num1, int num2)
+// {
+//     int res = num1 % num2;
+//     if (res == 0) Console.WriteLine($"Кратно");
+//     else Console.WriteLine($"не кратно, {res}");
+// }   
 
-Krat(num1, num2);
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// int num2 = Convert.ToInt32(Console.ReadLine());
+
+// Krat(num1, num2);
 
 // ————————————————————————————————————————————————————————————————————————// END //
