@@ -29,17 +29,17 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-int DeletDigit(int num)
-{
-    int sot = num / 100;
-    int ed = num % 10;
-    return sot * 10 + ed;
-}
+// int DeletDigit(int num)
+// {
+//     int sot = num / 100;
+//     int ed = num % 10;
+//     return sot * 10 + ed;
+// }
 
-int rndmnmbr = new Random().Next(100, 1000); //or 99+1
+// int rndmnmbr = new Random().Next(100, 1000); //or 99+1
 
-Console.WriteLine(rndmnmbr);
-Console.WriteLine(DeletDigit(rndmnmbr));
+// Console.WriteLine(rndmnmbr);
+// Console.WriteLine(DeletDigit(rndmnmbr));
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
