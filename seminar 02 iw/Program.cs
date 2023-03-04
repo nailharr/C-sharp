@@ -52,24 +52,44 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 1
 
-bool MultipleAB(int number)
-{
-    return number % 7 == 0 && number % 23 == 0;
-}
+// bool MultipleAB(int number)
+// {
+//     return number % 7 == 0 && number % 23 == 0;
+// }
 
-Console.WriteLine("Input a number: ");
-int inputnum = Convert.ToInt32(Console.ReadLine());
-if (MultipleAB(inputnum) == true)
-{
-    Console.WriteLine($"{inputnum} is a multiple 7 and 23. It's all right!");
-}
-else
-    Console.WriteLine($"{inputnum} not a multiple 7 and 23. :((");
+// Console.WriteLine("Input a number: ");
+// int inputnum = Convert.ToInt32(Console.ReadLine());
+// if (MultipleAB(inputnum) == true)
+// {
+//     Console.WriteLine($"{inputnum} is a multiple 7 and 23. Well done!");
+// }
+// else
+//     Console.WriteLine($"{inputnum} not a multiple 7 and 23. :( Try again");
 
-Console.WriteLine(MultipleAB(inputnum));
+// Console.WriteLine(MultipleAB(inputnum));
 
 // START // ———————————————————————————————————————————————————————————————————————— 2
 
 
+bool MultipleAB(int number, int numA, int numB)
+{
+    return number % numA == 0 && number % numB == 0;
+}
+
+Console.WriteLine("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a number A: ");
+int numA = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input a number B: ");
+int numB = Convert.ToInt32(Console.ReadLine());
+int num = number;
+if (MultipleAB(number, numA, numB) == true)
+{
+    Console.WriteLine($"{number} is a multiple {numA} and {numB}. 🥳 Well done! 🥳");
+}
+else
+    Console.WriteLine($"{number} 💩 not a multiple {numA} and {numB}. 🤪 Don't worry and try again.");
+
+// Console.WriteLine(MultipleAB(number, numA, numB));
 
 // ————————————————————————————————————————————————————————————————————————// END //
