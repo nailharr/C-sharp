@@ -15,11 +15,14 @@
 // Console.WriteLine("Enter the three-digit number");
 // int number = Convert.ToInt32(Console.ReadLine());
 
-// if ((number > -1000 && number < -99) || (number > 99 && number < 1000))
+// if (number <= 100 || number > 1000)
+// {
+//     Console.WriteLine("Invalid number");
+// }
+// else
 // {
 //     Console.WriteLine(CutTails(number));
 // }
-// else Console.WriteLine("Invalid number");
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 

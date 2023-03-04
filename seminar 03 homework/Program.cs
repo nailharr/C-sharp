@@ -8,30 +8,30 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-void Palindrome5d(int num)
-{
-    int fraction1 = num / 1000;
-    int fraction2 = num % 100;
-    if (num > 9999 && num < 100000)
-    {
-        if ((num % 10 == num / 10000) && (fraction1 % 10 == fraction2 / 10))
-        {
-            Console.WriteLine($"Number {num} is a Palindrome");
-        }
-        else
-        {
-            Console.WriteLine($"Number {num} is NOT a Palindrome");
-        }
-    }
-    else
-    {
-        Console.WriteLine("Enter a valid 5 digit number!");
-    }
-}
+// void Palindrome5d(int num)
+// {
+//     int fraction1 = num / 1000;
+//     int fraction2 = num % 100;
+//     if (num > 9999 && num < 100000)
+//     {
+//         if ((num % 10 == num / 10000) && (fraction1 % 10 == fraction2 / 10))
+//         {
+//             Console.WriteLine($"Number {num} is a Palindrome");
+//         }
+//         else
+//         {
+//             Console.WriteLine($"Number {num} is NOT a Palindrome");
+//         }
+//     }
+//     else
+//     {
+//         Console.WriteLine("Enter a valid 5 digit number!");
+//     }
+// }
 
-Console.Write("Enter a 5 digit number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Palindrome5d(number);
+// Console.Write("Enter a 5 digit number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Palindrome5d(number);
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
