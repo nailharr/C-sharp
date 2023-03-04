@@ -100,15 +100,49 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-bool QuadNumbers(int number1, int number2)
-{
-    return number1 == Math.Pow(number2, 2) || number2 == Math.Pow(number1, 2);
-}
-Console.WriteLine("Enter first number: " );
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second number: " );
-int num2 = Convert.ToInt32(Console.ReadLine());
+// bool QuadNumbers(int number1, int number2)
+// {
+//     return number1 == Math.Pow(number2, 2) || number2 == Math.Pow(number1, 2);
+// }
+// Console.WriteLine("Enter first number: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter second number: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(QuadNumbers(num1,num2));
+// Console.WriteLine(QuadNumbers(num1, num2));
 
 // ————————————————————————————————————————————————————————————————————————// END //
+
+
+
+
+
+// Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому.
+// Если второе число не кратно числу первому, то программа выводит остаток от деления.
+// 34, 5 -> не кратно, остаток 4
+// 16, 4  -> кратно
+
+// START // ————————————————————————————————————————————————————————————————————————
+
+void Multiple2Num(int num1, int num2)
+{
+    int res = num2 % num1;
+    if (num2 == 0) Console.WriteLine("Enter a number more than zero, please!");
+    else if (res == 0)
+    {
+        Console.WriteLine($"Congratulations! Number {num2} is multiple {num1}.");
+    }
+    else if (num1 < num2)
+        Console.WriteLine($"Number {num2} is NOT multiple {num1}. Remainder -> {res}");
+        else Console.WriteLine("First number must be less than the second and not equal to zero");
+}
+
+
+Console.WriteLine("Enter first number: ");
+int number01 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter second number: ");
+int number02 = Convert.ToInt32(Console.ReadLine());
+
+Multiple2Num(number01, number02);
+
+// ————————————————————————————————————————————————————————————————————————// END
