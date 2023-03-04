@@ -3,9 +3,56 @@
 // 782 -> 8
 // 918 -> 1
 
-// START // ————————————————————————————————————————————————————————————————————————
+// START // ———————————————————————————————————————————————————————————————————————— 1 variant
+
+// int CutTails(int num)
+// {
+//     int result = num % 100;
+//     int result2 = result / 10;
+//     return result2;
+// }
+
+// Console.WriteLine("Enter the three-digit number");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// if ((number > -1000 && number < -99) || (number > 99 && number < 1000))
+// {
+//     Console.WriteLine(CutTails(number));
+// }
+// else Console.WriteLine("Invalid number");
 
 
+// START // ———————————————————————————————————————————————————————————————————————— 2 variant
+
+int CutTails(int num)
+{
+    int result = num % 100;
+    int result2 = result / 10;
+
+    if (num > -1000 && num < -99)
+    {
+        return result2 * (-1);
+    }
+    else if (num > 99 && num < 1000)
+    {
+        return result2;
+    }
+    else
+    {
+        return -1;
+    }
+}
+
+Console.WriteLine("Enter the three-digit number");
+int number = Convert.ToInt32(Console.ReadLine());
+if (CutTails(number) > 0)
+{
+    Console.WriteLine(CutTails(number));
+}
+else
+{
+    Console.WriteLine("Invalid number");
+}
 
 // ————————————————————————————————————————————————————————————————————————// END
 
