@@ -21,7 +21,6 @@
 // }
 // else Console.WriteLine("Invalid number");
 
-
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
 // int CutTails(int num)
@@ -95,24 +94,25 @@
 // 1 -> нет
 
 // START // ————————————————————————————————————————————————————————————————————————
-void DaysOfWeek(int dayNumber)
-{
-    if (dayNumber > 0 && dayNumber < 8)
-    {
-        if (dayNumber != 6 && dayNumber != 7)
-        {
-            Console.WriteLine("It's a work day 💪");
-        }
-        else Console.WriteLine("It's a HOLIDAY! 🛫 🏝 ⛱");
-    }
-    else
-    {
-        Console.WriteLine("Try again and enter correct number of day: 1 to 7.");
-    }
-}
 
-Console.Write("Enter the day number: ");
-int dayNum = Convert.ToUInt16(Console.ReadLine());
-DaysOfWeek(dayNum);
+// void DaysOfWeek(int dayNumber)
+// {
+//     if (dayNumber > 0 && dayNumber < 8)
+//     {
+//         if (dayNumber != 6 && dayNumber != 7)
+//         {
+//             Console.WriteLine("It's a work day 💪");
+//         }
+//         else Console.WriteLine("It's a HOLIDAY! 🛫 🏝 ⛱");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Try again and enter correct number of day: 1 to 7.");
+//     }
+// }
+
+// Console.Write("Enter the day number: ");
+// int dayNum = Convert.ToUInt16(Console.ReadLine());
+// DaysOfWeek(dayNum);
 
 // ————————————————————————————————————————————————————————————————————————// END
