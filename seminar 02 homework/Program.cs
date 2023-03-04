@@ -24,35 +24,35 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
-int CutTails(int num)
-{
-    int result = num % 100;
-    int result2 = result / 10;
+// int CutTails(int num)
+// {
+//     int result = num % 100;
+//     int result2 = result / 10;
 
-    if (num > -1000 && num < -99)
-    {
-        return result2 * (-1);
-    }
-    else if (num > 99 && num < 1000)
-    {
-        return result2;
-    }
-    else
-    {
-        return -1;
-    }
-}
+//     if (num > -1000 && num < -99)
+//     {
+//         return result2 * (-1);
+//     }
+//     else if (num > 99 && num < 1000)
+//     {
+//         return result2;
+//     }
+//     else
+//     {
+//         return -1;
+//     }
+// }
 
-Console.WriteLine("Enter the three-digit number");
-int number = Convert.ToInt32(Console.ReadLine());
-if (CutTails(number) > 0)
-{
-    Console.WriteLine(CutTails(number));
-}
-else
-{
-    Console.WriteLine("Invalid number");
-}
+// Console.WriteLine("Enter the three-digit number");
+// int number = Convert.ToInt32(Console.ReadLine());
+// if (CutTails(number) > 0)
+// {
+//     Console.WriteLine(CutTails(number));
+// }
+// else
+// {
+//     Console.WriteLine("Invalid number");
+// }
 
 // ————————————————————————————————————————————————————————————————————————// END
 
@@ -66,7 +66,23 @@ else
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-
+void ThirdDigit(long num)
+{
+    string numText = Convert.ToString(num);
+    if (num < 100)
+    {
+        Console.WriteLine("________________________________________________");
+        Console.WriteLine("No third digit! Try again and enter other number.");
+        Console.WriteLine();
+    }
+    else if (numText.Length > 2)
+    {
+        Console.WriteLine($"Third digit this number is: {numText[2]}");
+    }
+}
+Console.WriteLine("Enter any number");
+long number = Convert.ToInt64(Console.ReadLine());
+ThirdDigit(number);
 
 // ————————————————————————————————————————————————————————————————————————// END
 
