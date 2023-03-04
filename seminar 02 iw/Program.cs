@@ -124,25 +124,25 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-void Multiple2Num(int num1, int num2)
-{
-    int res = num2 % num1;
-    if (num2 == 0) Console.WriteLine("Enter a number more than zero, please!");
-    else if (res == 0)
-    {
-        Console.WriteLine($"Congratulations! Number {num2} is multiple {num1}.");
-    }
-    else if (num1 < num2)
-        Console.WriteLine($"Number {num2} is NOT multiple {num1}. Remainder -> {res}");
-        else Console.WriteLine("First number must be less than the second and not equal to zero");
-}
+// void Multiple2Num(int num1, int num2)
+// {
+//     int res = num2 % num1;
+//     if (num2 == 0) Console.WriteLine("Enter a number more than zero, please!");
+//     else if (res == 0)
+//     {
+//         Console.WriteLine($"Congratulations! Number {num2} is multiple {num1}.");
+//     }
+//     else if (num1 < num2)
+//         Console.WriteLine($"Number {num2} is NOT multiple {num1}. Remainder -> {res}");
+//         else Console.WriteLine("First number must be less than the second and not equal to zero");
+// }
 
 
-Console.WriteLine("Enter first number: ");
-int number01 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second number: ");
-int number02 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter first number: ");
+// int number01 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter second number: ");
+// int number02 = Convert.ToInt32(Console.ReadLine());
 
-Multiple2Num(number01, number02);
+// Multiple2Num(number01, number02);
 
 // ————————————————————————————————————————————————————————————————————————// END
