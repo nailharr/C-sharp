@@ -41,3 +41,35 @@
 // Console.WriteLine(Delete2Digit(number3Digit));
 
 // ————————————————————————————————————————————————————————————————————————// END //
+
+
+
+
+//3. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
+//14  ->  нет
+//46  ->  нет
+//161 ->  да
+
+// START // ———————————————————————————————————————————————————————————————————————— 1
+
+bool MultipleAB(int number)
+{
+    return number % 7 == 0 && number % 23 == 0;
+}
+
+Console.WriteLine("Input a number: ");
+int inputnum = Convert.ToInt32(Console.ReadLine());
+if (MultipleAB(inputnum) == true)
+{
+    Console.WriteLine($"{inputnum} is a multiple 7 and 23. It's all right!");
+}
+else
+    Console.WriteLine($"{inputnum} not a multiple 7 and 23. :((");
+
+Console.WriteLine(MultipleAB(inputnum));
+
+// START // ———————————————————————————————————————————————————————————————————————— 2
+
+
+
+// ————————————————————————————————————————————————————————————————————————// END //
