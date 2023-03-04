@@ -71,25 +71,44 @@
 // START // ———————————————————————————————————————————————————————————————————————— 2
 
 
-bool MultipleAB(int number, int numA, int numB)
-{
-    return number % numA == 0 && number % numB == 0;
-}
+// bool MultipleAB(int number, int numA, int numB)
+// {
+//     return number % numA == 0 && number % numB == 0;
+// }
 
-Console.WriteLine("Input a number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a number A: ");
-int numA = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a number B: ");
-int numB = Convert.ToInt32(Console.ReadLine());
-int num = number;
-if (MultipleAB(number, numA, numB) == true)
-{
-    Console.WriteLine($"{number} is a multiple {numA} and {numB}. 🥳 Well done! 🥳");
-}
-else
-    Console.WriteLine($"{number} 💩 not a multiple {numA} and {numB}. 🤪 Don't worry and try again.");
+// Console.WriteLine("Input a number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input a number A: ");
+// int numA = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input a number B: ");
+// int numB = Convert.ToInt32(Console.ReadLine());
+// int num = number;
+// if (MultipleAB(number, numA, numB) == true)
+// {
+//     Console.WriteLine($"{number} is a multiple {numA} and {numB}. 🥳 Well done! 🥳");
+// }
+// else
+//     Console.WriteLine($"{number} 💩 not a multiple {numA} and {numB}. 🤪 Don't worry and try again.");
 
-// Console.WriteLine(MultipleAB(number, numA, numB));
+// // Console.WriteLine(MultipleAB(number, numA, numB));
+
+// ————————————————————————————————————————————————————————————————————————// END //
+
+
+
+//4. Напишите программу, которая принимает на вход два числа и проверяет, является ли одно число квадратом другого.
+
+// START // ————————————————————————————————————————————————————————————————————————
+
+bool QuadNumbers(int number1, int number2)
+{
+    return number1 == Math.Pow(number2, 2) || number2 == Math.Pow(number1, 2);
+}
+Console.WriteLine("Enter first number: " );
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter second number: " );
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine(QuadNumbers(num1,num2));
 
 // ————————————————————————————————————————————————————————————————————————// END //
