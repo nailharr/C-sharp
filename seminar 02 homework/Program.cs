@@ -66,23 +66,23 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-void ThirdDigit(long num)
-{
-    string numText = Convert.ToString(num);
-    if (num < 100)
-    {
-        Console.WriteLine("________________________________________________");
-        Console.WriteLine("No third digit! Try again and enter other number.");
-        Console.WriteLine();
-    }
-    else if (numText.Length > 2)
-    {
-        Console.WriteLine($"Third digit this number is: {numText[2]}");
-    }
-}
-Console.WriteLine("Enter any number");
-long number = Convert.ToInt64(Console.ReadLine());
-ThirdDigit(number);
+// void ThirdDigit(long num)
+// {
+//     string numText = Convert.ToString(num);
+//     if (num < 100)
+//     {
+//         Console.WriteLine("________________________________________________");
+//         Console.WriteLine("No third digit! Try again and enter other number.");
+//         Console.WriteLine();
+//     }
+//     else if (numText.Length > 2)
+//     {
+//         Console.WriteLine($"Third digit this number is: {numText[2]}");
+//     }
+// }
+// Console.WriteLine("Enter any number");
+// long number = Convert.ToInt64(Console.ReadLine());
+// ThirdDigit(number);
 
 // ————————————————————————————————————————————————————————————————————————// END
 
@@ -95,7 +95,24 @@ ThirdDigit(number);
 // 1 -> нет
 
 // START // ————————————————————————————————————————————————————————————————————————
+void DaysOfWeek(int dayNumber)
+{
+    if (dayNumber > 0 && dayNumber < 8)
+    {
+        if (dayNumber != 6 && dayNumber != 7)
+        {
+            Console.WriteLine("It's a work day 💪");
+        }
+        else Console.WriteLine("It's a HOLIDAY! 🛫 🏝 ⛱");
+    }
+    else
+    {
+        Console.WriteLine("Try again and enter correct number of day: 1 to 7.");
+    }
+}
 
-
+Console.Write("Enter the day number: ");
+int dayNum = Convert.ToUInt16(Console.ReadLine());
+DaysOfWeek(dayNum);
 
 // ————————————————————————————————————————————————————————————————————————// END
