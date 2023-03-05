@@ -43,7 +43,22 @@
 // A (3,6,8); B (2,1,-7), -> 15.84
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
-// START // ————————————————————————————————————————————————————————————————————————
+// START // ———————————————————————————————————————————————————————————————————————— 1 variant
+
+Console.WriteLine("Enter the coordinates x, y, z of the first point");
+double xA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+double yA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+double zA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+Console.WriteLine("Enter the coordinates x, y, z of the second point");
+double xB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+double yB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+double zB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+
+double distance = Math.Sqrt(Math.Pow(xA +xB,2) +Math.Pow(yA+yB,2)+Math.Pow(zA+zB,2));
+
+Console.WriteLine($"Distance between two points: {distance}");
+
+// START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
 
 
