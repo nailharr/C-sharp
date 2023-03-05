@@ -63,7 +63,7 @@
 double CoordIn(string axis, string point)
 {
     Console.Write($"Enter the {axis} coordinate of point {point}: ");
-    return Convert.ToDouble(Console.ReadLine());
+    return Math.Abs(Convert.ToDouble(Console.ReadLine()));
 }
 
 double Dist2Points3D(double x1, double y1, double z1,
@@ -75,16 +75,17 @@ double Dist2Points3D(double x1, double y1, double z1,
     return distance;
 }
 
-double xA = Math.Abs(CoordIn("x", "A"));
-double yA = Math.Abs(CoordIn("y", "A"));
-double zA = Math.Abs(CoordIn("z", "A"));
-double xB = Math.Abs(CoordIn("x", "B"));
-double yB = Math.Abs(CoordIn("y", "B"));
-double zB = Math.Abs(CoordIn("z", "B"));
+double xA = CoordIn("x", "A");
+double yA = CoordIn("y", "A");
+double zA = CoordIn("z", "A");
+double xB = CoordIn("x", "B");
+double yB = CoordIn("y", "B");
+double zB = CoordIn("z", "B");
 
 double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 3);
 
 Console.WriteLine($"Distance between two points: {length} units.");
+
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
