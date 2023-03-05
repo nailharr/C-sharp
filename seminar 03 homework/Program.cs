@@ -28,6 +28,7 @@
 //         Console.WriteLine("Enter a valid 5 digit number!");
 //     }
 // }
+// while (true);
 
 // Console.Write("Enter a 5 digit number: ");
 // int number = Convert.ToInt32(Console.ReadLine());
@@ -45,21 +46,38 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 1 variant
 
-Console.WriteLine("Enter the coordinates x, y, z of the first point");
+// Console.WriteLine("Enter the coordinates of the first point x, y, z in order:");
+// double xA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double yA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double zA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// Console.WriteLine("Enter the coordinates of the second point x, y, z in order:");
+// double xB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double yB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double zB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+
+// double distance = Math.Sqrt(Math.Pow(xA + xB, 2) + Math.Pow(yA + yB, 2) + Math.Pow(zA + zB, 2));
+
+// Console.WriteLine($"Distance between two points: {distance} units.");
+
+// START // ———————————————————————————————————————————————————————————————————————— 2 variant
+
+double Dist2Points3D(double x1, double y1, double z1, double x2, double y2, double z2)
+{
+    double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) + Math.Pow(y1 + y2, 2) + Math.Pow(z1 + z2, 2));
+    return distance;
+}
+
+
+Console.WriteLine("Enter the coordinates of the first point x, y, z in order:");
 double xA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
 double yA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
 double zA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-Console.WriteLine("Enter the coordinates x, y, z of the second point");
+Console.WriteLine("Enter the coordinates of the second point x, y, z in order:");
 double xB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
 double yB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
 double zB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
 
-double distance = Math.Sqrt(Math.Pow(xA +xB,2) +Math.Pow(yA+yB,2)+Math.Pow(zA+zB,2));
-
-Console.WriteLine($"Distance between two points: {distance}");
-
-// START // ———————————————————————————————————————————————————————————————————————— 2 variant
-
+Console.WriteLine($"Distance between two points: {Dist2Points3D(xA, yA, zA, xB, yB, zB)} units.");
 
 
 // ————————————————————————————————————————————————————————————————————————// END //
