@@ -28,7 +28,6 @@
 //         Console.WriteLine("Enter a valid 5 digit number!");
 //     }
 // }
-// while (true);
 
 // Console.Write("Enter a 5 digit number: ");
 // int number = Convert.ToInt32(Console.ReadLine());
@@ -61,24 +60,31 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
-double Dist2Points3D(double x1, double y1, double z1, double x2, double y2, double z2)
+double CoordIn(string axis, string point)
 {
-    double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) + Math.Pow(y1 + y2, 2) + Math.Pow(z1 + z2, 2));
+    Console.Write($"Enter the {axis} coordinate of point {point}: ");
+    return Convert.ToDouble(Console.ReadLine());
+}
+
+double Dist2Points3D(double x1, double y1, double z1,
+                    double x2, double y2, double z2)
+{
+    double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) +
+                                Math.Pow(y1 + y2, 2) +
+                                Math.Pow(z1 + z2, 2));
     return distance;
 }
 
+double xA = Math.Abs(CoordIn("x", "A"));
+double yA = Math.Abs(CoordIn("y", "A"));
+double zA = Math.Abs(CoordIn("z", "A"));
+double xB = Math.Abs(CoordIn("x", "B"));
+double yB = Math.Abs(CoordIn("y", "B"));
+double zB = Math.Abs(CoordIn("z", "B"));
 
-Console.WriteLine("Enter the coordinates of the first point x, y, z in order:");
-double xA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-double yA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-double zA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-Console.WriteLine("Enter the coordinates of the second point x, y, z in order:");
-double xB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-double yB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-double zB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 3);
 
-Console.WriteLine($"Distance between two points: {Dist2Points3D(xA, yA, zA, xB, yB, zB)} units.");
-
+Console.WriteLine($"Distance between two points: {length} units.");
 
 // ————————————————————————————————————————————————————————————————————————// END //
 
