@@ -24,6 +24,7 @@
 //     Console.WriteLine(CutTails(number));
 // }
 
+
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
 // int CutTails(int num)
