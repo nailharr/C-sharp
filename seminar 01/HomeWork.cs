@@ -122,11 +122,11 @@
 
 //Task 8(2):
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––
-// Console.Clear();
-// Console.WriteLine("Input a number:");
-// int num = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Even numbers from 1 to " + num + ":");
-// for (int i = 2; i <= num; i += 2) 
-// {
-//     Console.Write(i + " ");
-// }
+Console.Clear();
+Console.WriteLine("Input a number:");
+int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Even numbers from 1 to " + num + ":");
+for (int i = 2; i <= num; i += 2) 
+{
+    Console.Write(i + " ");
+}

@@ -60,31 +60,31 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
-double CoordIn(string axis, string point)
-{
-    Console.Write($"Enter the {axis} coordinate of point {point}: ");
-    return Math.Abs(Convert.ToDouble(Console.ReadLine()));
-}
+// double CoordIn(string axis, string point)
+// {
+//     Console.Write($"Enter the {axis} coordinate of point {point}: ");
+//     return Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// }
 
-double Dist2Points3D(double x1, double y1, double z1,
-                    double x2, double y2, double z2)
-{
-    double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) +
-                                Math.Pow(y1 + y2, 2) +
-                                Math.Pow(z1 + z2, 2));
-    return distance;
-}
+// double Dist2Points3D(double x1, double y1, double z1,
+//                     double x2, double y2, double z2)
+// {
+//     double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) +
+//                                 Math.Pow(y1 + y2, 2) +
+//                                 Math.Pow(z1 + z2, 2));
+//     return distance;
+// }
 
-double xA = CoordIn("x", "A");
-double yA = CoordIn("y", "A");
-double zA = CoordIn("z", "A");
-double xB = CoordIn("x", "B");
-double yB = CoordIn("y", "B");
-double zB = CoordIn("z", "B");
+// double xA = CoordIn("x", "A");
+// double yA = CoordIn("y", "A");
+// double zA = CoordIn("z", "A");
+// double xB = CoordIn("x", "B");
+// double yB = CoordIn("y", "B");
+// double zB = CoordIn("z", "B");
 
-double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 3);
+// double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 3);
 
-Console.WriteLine($"Distance between two points: {length} units.");
+// Console.WriteLine($"Distance between two points: {length} units.");
 
 
 // ————————————————————————————————————————————————————————————————————————// END //
@@ -99,6 +99,17 @@ Console.WriteLine($"Distance between two points: {length} units.");
 
 // START // ————————————————————————————————————————————————————————————————————————
 
+Console.Write("Enter a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
+void CubeNumbers(int num)
+{
+    for (int i = 1; i <= num; i++)
+    {
+                Console.Write(Math.Pow(i, 3) + ", ");
+    }
 
+}
+Console.Write($"{number} -> ");
+CubeNumbers(number);
 // ————————————————————————————————————————————————————————————————————————// END //
