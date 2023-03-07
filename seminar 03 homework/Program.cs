@@ -46,43 +46,42 @@
 // START // ———————————————————————————————————————————————————————————————————————— 1 variant
 
 // Console.WriteLine("Enter the coordinates of the first point x, y, z in order:");
-// double xA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-// double yA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-// double zA = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double xA = Convert.ToDouble(Console.ReadLine());
+// double yA = Convert.ToDouble(Console.ReadLine());
+// double zA = Convert.ToDouble(Console.ReadLine());
 // Console.WriteLine("Enter the coordinates of the second point x, y, z in order:");
-// double xB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-// double yB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
-// double zB = Math.Abs(Convert.ToDouble(Console.ReadLine()));
+// double xB = Convert.ToDouble(Console.ReadLine());
+// double yB = Convert.ToDouble(Console.ReadLine());
+// double zB = Convert.ToDouble(Console.ReadLine());
 
-// double distance = Math.Sqrt(Math.Pow(xA + xB, 2) + Math.Pow(yA + yB, 2) + Math.Pow(zA + zB, 2));
+// double distance = Math.Round(Math.Sqrt(Math.Pow(xA - xB, 2) + Math.Pow(yA - yB, 2) + Math.Pow(zA - zB, 2)),4);
 
 // Console.WriteLine($"Distance between two points: {distance} units.");
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
-// double CoordIn(string axis, string point)
+// double CoordinateInput(string axis, string point)
 // {
 //     Console.Write($"Enter the {axis} coordinate of point {point}: ");
-//     return Math.Abs(Convert.ToDouble(Console.ReadLine()));
+//     return Convert.ToDouble(Console.ReadLine());
 // }
 
-// double Dist2Points3D(double x1, double y1, double z1,
-//                     double x2, double y2, double z2)
+// double Dist2Points3D(double x1, double y1, double z1,double x2, double y2, double z2)
 // {
-//     double distance = Math.Sqrt(Math.Pow(x1 + x2, 2) +
-//                                 Math.Pow(y1 + y2, 2) +
-//                                 Math.Pow(z1 + z2, 2));
+//     double distance = Math.Sqrt(Math.Pow(x1 - x2, 2) +
+//                                 Math.Pow(y1 - y2, 2) +
+//                                 Math.Pow(z1 - z2, 2));
 //     return distance;
 // }
 
-// double xA = CoordIn("x", "A");
-// double yA = CoordIn("y", "A");
-// double zA = CoordIn("z", "A");
-// double xB = CoordIn("x", "B");
-// double yB = CoordIn("y", "B");
-// double zB = CoordIn("z", "B");
+// double xA = CoordinateInput("x", "A");
+// double yA = CoordinateInput("y", "A");
+// double zA = CoordinateInput("z", "A");
+// double xB = CoordinateInput("x", "B");
+// double yB = CoordinateInput("y", "B");
+// double zB = CoordinateInput("z", "B");
 
-// double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 3);
+// double length = Math.Round(Dist2Points3D(xA, yA, zA, xB, yB, zB), 4);
 
 // Console.WriteLine($"Distance between two points: {length} units.");
 
@@ -99,17 +98,17 @@
 
 // START // ————————————————————————————————————————————————————————————————————————
 
-Console.Write("Enter a number: ");
-int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Enter a number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
 
-void CubeNumbers(int num)
-{
-    for (int i = 1; i <= num; i++)
-    {
-                Console.Write(Math.Pow(i, 3) + ", ");
-    }
+// void CubeNumbers(int num)
+// {
+//     for (int i = 1; i <= num; i++)
+//     {
+//         Console.Write(Math.Pow(i, 3) + ", ");
+//     }
 
-}
-Console.Write($"{number} -> ");
-CubeNumbers(number);
+// }
+// Console.Write($"{number} -> ");
+// CubeNumbers(number);
 // ————————————————————————————————————————————————————————————————————————// END //
