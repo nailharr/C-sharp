@@ -6,7 +6,7 @@
 // 12821 -> да
 // 23432 -> да
 
-// START // ————————————————————————————————————————————————————————————————————————
+// START // ———————————————————————————————————————————————————————————————————————— 1 variant
 
 // void Palindrome5d(int num)
 // {
@@ -33,6 +33,37 @@
 // int number = Convert.ToInt32(Console.ReadLine());
 // Palindrome5d(number);
 
+
+
+// START // ———————————————————————————————————————————————————————————————————————— 2 variant
+
+// void PolindromeNum(int num)
+// {
+//     string inputStr = Convert.ToString(num);
+//     char[] inputarray = inputStr.ToCharArray();
+//     Array.Reverse(inputarray);
+//     string output = new string(inputarray);
+//     // Console.WriteLine(output);
+//     if (inputStr == output)
+//     {
+//         Console.WriteLine($"Number {num} palindrome.");
+//     }
+//     else
+//     {
+//         Console.WriteLine($"Number {num} is NOT a palindrome.");
+//     }
+// }
+
+// Console.Write("Enter a five-digit number: ");
+// int input = Convert.ToInt32(Console.ReadLine());
+// if (input >= 10000 && input < 100000)
+// {
+//     PolindromeNum(input);
+// }
+// else
+// {
+//     Console.WriteLine("You entered a non-five-digit number! Try again.");
+// }
 // ————————————————————————————————————————————————————————————————————————// END //
 
 
