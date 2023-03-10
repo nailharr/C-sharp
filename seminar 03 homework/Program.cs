@@ -37,7 +37,7 @@
 
 // START // ———————————————————————————————————————————————————————————————————————— 2 variant
 
-// void PolindromeNum(int num)
+// void PalindromeNum(int num)
 // {
 //     string inputStr = Convert.ToString(num);
 //     char[] inputarray = inputStr.ToCharArray();
@@ -58,7 +58,7 @@
 // int input = Convert.ToInt32(Console.ReadLine());
 // if (input >= 10000 && input < 100000)
 // {
-//     PolindromeNum(input);
+//     PalindromeNum(input);
 // }
 // else
 // {
