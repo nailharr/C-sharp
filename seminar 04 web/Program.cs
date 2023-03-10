@@ -19,7 +19,7 @@
 
 
 
-
+// ________________________________________________________________
 // Задача 4.Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
 // [1,0,1,1,0,1,0,0]
 
@@ -50,3 +50,44 @@
 // int maxValue = Convert.ToInt32(Console.ReadLine());
 
 // ShowArray(CreateRandomArray(size, minValue, maxValue));
+
+// ________________________________________________________________
+// Напишите программу, которая на вход принимает число и выдает количество цифр в этом числе.
+// 456 -> 3
+// 78 -> 2
+// 89126 -> 5
+
+// double CountNum(double num)
+// {
+//     double count = 1;
+//     for (count = 1; num > 10; count++)
+//     {
+//        num = num / 10;
+//     }
+//     return count;
+// }
+
+
+// Console.WriteLine("Enter a number: ");
+// double number = Convert.ToDouble(Console.ReadLine());
+// Console.WriteLine(CountNum(number));
+
+// ________________________________________________________________
+// Напишите программу, которая на вход принимает число N и выдает произведение чисел от 1 до N.
+// 4 -> 24
+// 5 -> 120
+
+
+// int Factorial(int num)
+// {
+//     int result = 1;
+//     for (int current = 1; current <= num; current++)
+//     {
+//         result *= current;
+//     }
+//     return result;
+// }
+
+// Console.WriteLine("Enter a number: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(Factorial(number));
