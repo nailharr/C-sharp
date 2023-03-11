@@ -89,6 +89,28 @@
 // 6, 1, 33 -> [6, 1, 33]
 // START // ———————————————————————————————————————————————————————————————————————— 
 
+// int[] CreateArray(int size)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"Input a {i} element of array: ");
+//         array[i]= Convert.ToInt32(Console.ReadLine());
+//     }
+//     return array;
+// }
 
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// Console.WriteLine($"Input count element of array: ");
+// int count = Convert.ToInt32(Console.ReadLine());
+// ShowArray(CreateArray(count));
 
 // ————————————————————————————————————————————————————————————————————————// END //
