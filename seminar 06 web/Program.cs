@@ -82,8 +82,50 @@
 //числа фибоначчи последовательность чисел в которой первые 2 числа это 0 и 1, а последубщие это сумма двух передыдущих
 // [0, 1, 1, 2, 3, 5, 8, 13, ... ]
 
+// ________v1
 
+// Console.Write($"Enter count of Fibonacci numbers: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int a = 0, b = 1, c;
 
+// Console.Write($"{a} {b} ");
+// for (int i = 2; i < n; i++)
+// {
+//     c = a + b;
+//     Console.Write(c + " ");
+//     a = b;
+//     b = c;
+// }
+// Console.WriteLine();
+
+// ________v2
+
+// int[] FibonacciFirstN(int countNum)
+// {
+//     const int a = 0;
+//     const int b = 1;
+//     int[] fibonacciArray = new int[countNum];
+//     fibonacciArray[0] = a;
+//     fibonacciArray[1] = b;
+//     for (int i = 2; i < countNum; i++)
+//     {
+//         fibonacciArray[i] = fibonacciArray[i - 1] + fibonacciArray[i - 2];
+//     }
+//     return fibonacciArray;
+// }
+
+// void ShowArray(int[] arrayToShow)
+// {
+//     for (int i = 0; i < arrayToShow.Length; i++)
+//     {
+//         System.Console.Write(arrayToShow[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// System.Console.WriteLine($"Enter required count of Fibonacci numbers: ");
+// int countOfFibonacciNumbers = Convert.ToInt32(Console.ReadLine());
+// ShowArray(FibonacciFirstN(countOfFibonacciNumbers));
 
 // ______________________________________________________________________________________
 //Задача 4. ****Напишите программу, которая будет преобразовывать десятичное число в двоичное.
