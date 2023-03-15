@@ -132,3 +132,18 @@
 //45 -> 101101
 //3 -> 11
 //2 -> 10
+
+// int decimalNumber, quotient;
+// string binaryNumber = String.Empty;
+
+// Console.Write("Enter a decimal number: ");
+// decimalNumber = Convert.ToInt32(Console.ReadLine());
+
+// while (decimalNumber >= 1)
+// {
+//     quotient = decimalNumber / 2;
+//     binaryNumber = decimalNumber % 2 + binaryNumber;
+//     decimalNumber = quotient;
+// }
+
+// System.Console.WriteLine($"Binary number is: {binaryNumber}");
