@@ -4,7 +4,6 @@
 // [345, 897, 568, 234] -> 2
 
 // START // ———————————————————————————————————————————————————————————————————————— 
-
 // int[] Create3DigitPosArray(int size)
 // {
 //     int[] array = new int[size];
@@ -46,18 +45,13 @@
 
 // int countEven = CountEvenNumsInArray(array3DigitPos);
 // Console.WriteLine($"Count of even elements in array: {countEven}");
-
 // ————————————————————————————————————————————————————————————————————————// END //
-
-
-
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
 // START // ———————————————————————————————————————————————————————————————————————— 
-
 // int[] CreateRandomArray(int count, int start, int end)
 // {
 //     int[] array = new int[count];
@@ -93,29 +87,21 @@
 //     return sum;
 // }
 
-
 // int sizeOfArray = new Random().Next(10, 21);
 // int startArray = new Random().Next(-100, 0);
 // int endArray = new Random().Next(0, 101);
-
-
 
 // int[] arrayRand = CreateRandomArray(sizeOfArray, startArray, endArray);
 // Console.WriteLine($"Random array of {sizeOfArray} elements:");
 // ShowArray(arrayRand);
 // int sumOdd = SumOddElementsOfArray(arrayRand);
 // Console.WriteLine($"Sum elements of array with odd positions = {sumOdd}");
-
 // ————————————————————————————————————————————————————————————————————————// END //
-
-
-
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
 // START // ———————————————————————————————————————————————————————————————————————— 
-
 // Console.Clear();
 
 // int sizeArray = 12;
@@ -147,7 +133,6 @@
 //     Console.WriteLine();
 // }
 
-
 // double DiffMaxMinElements(double[] array)
 // {
 //     double min = array[0];
@@ -159,13 +144,11 @@
 //     }
 //     Console.WriteLine(min + " — Minimum" + " // " + max + " — Maximum");
 //     Console.WriteLine();
-//     return Math.Round(max - min, 4);
+//     return max - min;
 // }
 
 // double diffElements = DiffMaxMinElements(doubleArray);
 
-
 // Console.WriteLine($"Difference between maximal & minimal elements of array = {diffElements}");
 // Console.WriteLine();
-
 // ————————————————————————————————————————————————————————————————————————// END //
