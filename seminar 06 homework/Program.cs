@@ -11,15 +11,34 @@ int Request(string message)
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int[] FillArray(int size)
-{
-    int[] array = new int[size];
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write($"Enter number {i + 1}: ");
-        array[i] = Convert.ToInt32(Console.ReadLine());
-    }
-    return array;
+// int[] FillArray(int size)
+// {
+//     int[] array = new int[size];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"Enter number {i + 1}: ");
+//         array[i] = Convert.ToInt32(Console.ReadLine());
+//     }
+//     return array;
+// }
+
+int[] FillArray(int size) 
+{ 
+    int[] array = new int[size]; 
+    for (int i = 0; i < array.Length; i++) 
+    { 
+        Console.Write($"Enter number {i + 1}: "); 
+        
+        if (!int.TryParse(Console.ReadLine(), out int input))
+        {
+            Console.WriteLine("You must enter a integer. Please try again.");
+            i--;
+            continue;
+        }
+        
+        array[i] = input; 
+    } 
+    return array; 
 }
 
 int CountOfPositiveNumbers(int[] array)
