@@ -11,6 +11,7 @@
 //     return Convert.ToInt32(Console.ReadLine());
 // }
 
+// В данном методе не хватает проверки на ввод пустого значения или нечислового символа. Работает как винда.
 // // int[] FillArray(int size)
 // // {
 // //     int[] array = new int[size];
@@ -29,7 +30,7 @@
 //     { 
 //         Console.Write($"Enter number {i + 1}: "); 
 
-//         if (!int.TryParse(Console.ReadLine(), out int input))
+//         if (!int.TryParse(Console.ReadLine(), out int input)) // Check integer and return to input
 //         {
 //             Console.WriteLine("You must enter a integer. Please try again.");
 //             i--;
