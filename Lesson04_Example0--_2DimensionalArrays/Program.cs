@@ -131,7 +131,7 @@
 // 1! = 1
 // 0! = 1
 
-Console.Clear();
+// Console.Clear();
 
 // int Factorial(int num)
 // {
@@ -166,17 +166,17 @@ Console.Clear();
 // f(2) = 1
 // f(n) = f(n - 1) + f(n - 2)
 
-int Fibonacci(int num)
-{
-    if (num == 1 || num == 2) return 1;
-    else return Fibonacci(num - 1) + Fibonacci(num - 2);
-}
+// int Fibonacci(int num)
+// {
+//     if (num == 1 || num == 2) return 1;
+//     else return Fibonacci(num - 1) + Fibonacci(num - 2);
+// }
 
-int number = 45;
+// int number = 45;
 
-for (int i = 1; i <= number; i++)
-{
-    Console.WriteLine($"{i}. -> {Fibonacci(i)}");
-}
-Fibonacci(number);
+// for (int i = 1; i <= number; i++)
+// {
+//     Console.WriteLine($"{i}. -> {Fibonacci(i)}");
+// }
+// Fibonacci(number);
 // __________________________________________________________________________

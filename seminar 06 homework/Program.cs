@@ -68,34 +68,34 @@
 
 // b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; -0,5)
 
-void CrossPoint(int k1, int b1, int k2, int b2)
-{
-    double x = Convert.ToDouble(b2 - b1) / (k1 - k2);
-    double y = k1 * x + b1;
-    System.Console.WriteLine($"({x}; {y})");
-}
+// void CrossPoint(int k1, int b1, int k2, int b2)
+// {
+//     double x = Convert.ToDouble(b2 - b1) / (k1 - k2);
+//     double y = k1 * x + b1;
+//     System.Console.WriteLine($"({x}; {y})");
+// }
 
-int InputData(string input)
-{
-    Console.Write($"Enter value {input}: ");
-    return Convert.ToInt32(Console.ReadLine());
-}
+// int InputData(string input)
+// {
+//     Console.Write($"Enter value {input}: ");
+//     return Convert.ToInt32(Console.ReadLine());
+// }
 
-int k1Value = InputData("k1");
-int b1Value = InputData("b1");
-int k2Value = InputData("k2");
-int b2Value = InputData("b2");
+// int k1Value = InputData("k1");
+// int b1Value = InputData("b1");
+// int k2Value = InputData("k2");
+// int b2Value = InputData("b2");
 
-Console.Write($"Coordinates of cross point: ");
-if (k1Value == k2Value && b1Value == b2Value)
-{
-    Console.WriteLine($"Graph on the same line");
-}
-else if (k1Value == k2Value)
-{
-    Console.WriteLine($"Graphs is parallel");
-}
-else
-{
-    CrossPoint(k1Value, b1Value, k2Value, b2Value);
-}
+// Console.Write($"Coordinates of cross point: ");
+// if (k1Value == k2Value && b1Value == b2Value)
+// {
+//     Console.WriteLine($"Graph on the same line");
+// }
+// else if (k1Value == k2Value)
+// {
+//     Console.WriteLine($"Graphs is parallel");
+// }
+// else
+// {
+//     CrossPoint(k1Value, b1Value, k2Value, b2Value);
+// }
