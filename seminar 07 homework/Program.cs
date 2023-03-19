@@ -27,23 +27,23 @@
 //     return fill2DArray;
 // }
 
-// void Show2DArray(double[,] array)
-// {
-//     for (int i = 0; i < array.GetLength(0); i++)
-//     {
-//         for (int j = 0; j < array.GetLength(1); j++)
-//         {
-//             Console.Write(array[i, j] + " ");
-//         }
-//         Console.WriteLine();
-//     }
-//     Console.WriteLine();
-// }
+void Show2DArray(double[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
 
-// int rows = 5;
-// int cols = 5;
-// int minValue = -100;
-// int maxValue = 100;
+int rows = 5;
+int cols = 5;
+int minValue = -100;
+int maxValue = 100;
 
 // double[,] realNumArray = Fill2DArray(Create2DArray(rows, cols), minValue, maxValue);
 
@@ -90,4 +90,17 @@
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 // ============================================================================
 
+int Create2DIntegerArray(int rows, int columns, int startValue, int endValue)
+{
+    int[,] newArray = new int[rows, columns];
+    for (int i = 0; i < newArray.GetLength(0); i++)
+    {
+        for (int j = 0; j < newArray.GetLength(1); j++)
+        {
+            newArray[i, j] = new Random().Next(startValue, endValue + 1);
+        }
+    }
+    return newArray;
+}
 
+Show2DArray(Create2DIntegerArray(rows,cols,minValue,maxValue));
