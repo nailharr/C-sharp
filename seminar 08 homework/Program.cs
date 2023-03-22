@@ -76,18 +76,88 @@
 // Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 // ----------------------------------------------------------------
 
-int[,] Create2DArray(int rows, int cols, int minValue, int maxValue)
-{
-    int[,] matrix = new int[rows, cols];
-    for (int i = 0; i < rows; i++)
-    {
-        for (int j = 0; j < cols; j++)
-        {
-            matrix[i, j] = new Random().Next(minValue, maxValue + 1);
-        }
-    }
-    return matrix;
-}
+// int[,] Create2DArray(int rows, int cols, int minValue, int maxValue)
+// {
+//     int[,] matrix = new int[rows, cols];
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < cols; j++)
+//         {
+//             matrix[i, j] = new Random().Next(minValue, maxValue + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void Show2DArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int j = 0; j < array.Length; j++)
+//     {
+//         Console.Write(array[j] + "| ");
+//     }
+//     Console.WriteLine();
+//     Console.WriteLine();
+// }
+
+// int[] SumOfRowsMatrix(int[,] array)
+// {
+//     int[] arrayString = new int[array.GetLength(1)];
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         int sum = 0;
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             sum += array[i, j];
+//         }
+//         arrayString[i] = sum;
+//     }
+//     return arrayString;
+// }
+
+// int MinumalNumberOfRows(int[] array)
+// {
+//     int indexMin = 0;
+//     for (int i = 1; i < array.Length; i++)
+//     {
+//         if (array[i] < array[indexMin])
+//         {
+//             indexMin = i;
+//         }
+//     }
+//     return indexMin + 1;
+// }
+
+// int[,] inputArray = Create2DArray(5, 5, 0, 9);
+
+// Show2DArray(inputArray);
+// Console.WriteLine();
+// Console.Write($"Sum each row of the matrix: ");
+// ShowArray(SumOfRowsMatrix(inputArray));
+// Console.Write($"Row with minimal sum of elements: ");
+// Console.WriteLine(MinumalNumberOfRows(SumOfRowsMatrix(inputArray)));
+// Console.WriteLine();
+
+// ================================================================
+// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
+// Например, даны 2 матрицы:
+// 2 4 | 3 4
+// 3 2 | 3 3
+// Результирующая матрица будет:
+// 18 20
+// 15 18
+// ----------------------------------------------------------------
 
 void Show2DArray(int[,] array)
 {
@@ -100,67 +170,91 @@ void Show2DArray(int[,] array)
         Console.WriteLine();
     }
 }
+// int ValueOfMatrixElement(int[,] matrixA, int[,] matrixB)
+// {
+//     int[,] matrixC = new int[matrixA.GetLength(1), matrixB.GetLength(0)];
+//     int i = 0;
+//     int j = 0;
+//     for (int m = 0; m < matrixA.GetLength(1); m++)
+//     {
+//         int term = matrixA[i, m] * matrixB[m, j];
+//         matrixC[i, j] += term;
+//     }
+//     return matrixC[i, j];
+// }
 
-void ShowArray(int[] array)
+int[,] MatrixMult(int[,] matrixA, int[,] matrixB, int maxMatrix)
 {
-    for (int j = 0; j < array.Length; j++)
+    int[,] matrixC = new int[maxMatrix, maxMatrix];
+    int i, j;
+    for (i = 0; i < maxMatrix; i++)
     {
-        Console.Write(array[j] + "| ");
-    }
-    Console.WriteLine();
-    Console.WriteLine();
-}
-
-int[] SumOfRowsMatrix(int[,] array)
-{
-    int[] arrayString = new int[array.GetLength(1)];
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        int sum = 0;
-        for (int j = 0; j < array.GetLength(1); j++)
+        for (j = 0; j < maxMatrix; j++)
         {
-            sum += array[i, j];
-        }
-        arrayString[i] = sum;
-    }
-    return arrayString;
-}
-
-int MinumalNumberOfRows(int[] array)
-{
-    int indexMin = 0;
-    for (int i = 1; i < array.Length; i++)
-    {
-        if (array[i] < array[indexMin])
-        {
-            indexMin = i;
+            for (int m = 0; m < matrixA.GetLength(1); m++) // TODO: Количество строк первой матрицы больше количества ее столбцов.
+            {
+                int scalarComponent = matrixA[i, m] * matrixB[m, j];
+                matrixC[i, j] += scalarComponent;
+            }
         }
     }
-    return indexMin + 1;
+    return matrixC;
 }
 
-int[,] inputArray = Create2DArray(5, 5, 0, 9);
+int MaxIndexRowOrColumn(int[,] array)
+{
+    int maxIndex = 0;
+    if (array.GetLength(0) > array.GetLength(1))
+        maxIndex = array.GetLength(0);
+    else
+        maxIndex = array.GetLength(1);
+    return maxIndex;
+}
 
-Show2DArray(inputArray);
+int[,] matrixA = new int[,]
+{
+    // {2,4},
+    // {3,2},
+    {1,2},
+    {3,4},
+    {5,6},
+    {7,8},
+    {9,10}
+};
+
+int[,] matrixB = new int[,]
+{
+    // {3,4},
+    // {3,3}
+    {8,7,6,5,9},
+    {4,3,2,1,0}
+};
+
+
+int maxIndexMatrixA = MaxIndexRowOrColumn(matrixA);
+int maxIndexMatrixB = MaxIndexRowOrColumn(matrixB);
+
+
+
+
+Show2DArray(matrixA);
 Console.WriteLine();
-Console.Write($"Sum each row of the matrix: ");
-ShowArray(SumOfRowsMatrix(inputArray));
-Console.Write($"Row with minimal sum of elements: ");
-Console.WriteLine(MinumalNumberOfRows(SumOfRowsMatrix(inputArray)));
+Show2DArray(matrixB);
 Console.WriteLine();
 
-// ================================================================
-// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-// Например, даны 2 матрицы:
-// 2 4 | 3 4
-// 3 2 | 3 3
-// Результирующая матрица будет:
-// 18 20
-// 15 18
-// ----------------------------------------------------------------
+if (matrixA.GetLength(0) != matrixB.GetLength(1))
+{
+    Console.WriteLine("Incorrect matrix sizes");
+}
+else
+{
+    int[,] matrixC = MatrixMult(matrixA, matrixB, maxIndexMatrixA);
+    Show2DArray(matrixC);
+    Console.WriteLine();
+}
 
-
-
+Console.WriteLine($"Max length matrix A: {maxIndexMatrixA}");
+Console.WriteLine($"Max length matrix B: {maxIndexMatrixB}");
 
 // ================================================================
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу,
