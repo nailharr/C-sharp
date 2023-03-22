@@ -230,16 +230,15 @@ int[,] matrixB = new int[,]
     {4,3,2,1,0}
 };
 
-
 int maxIndexMatrixA = MaxIndexRowOrColumn(matrixA);
 int maxIndexMatrixB = MaxIndexRowOrColumn(matrixB);
-
-
-
 
 Show2DArray(matrixA);
 Console.WriteLine();
 Show2DArray(matrixB);
+Console.WriteLine();
+Console.WriteLine($"Max length matrix A: {maxIndexMatrixA}");
+Console.WriteLine($"Max length matrix B: {maxIndexMatrixB}");
 Console.WriteLine();
 
 if (matrixA.GetLength(0) != matrixB.GetLength(1))
@@ -249,12 +248,11 @@ if (matrixA.GetLength(0) != matrixB.GetLength(1))
 else
 {
     int[,] matrixC = MatrixMult(matrixA, matrixB, maxIndexMatrixA);
+    Console.WriteLine("Result of multiplying two matrices:");
     Show2DArray(matrixC);
     Console.WriteLine();
 }
 
-Console.WriteLine($"Max length matrix A: {maxIndexMatrixA}");
-Console.WriteLine($"Max length matrix B: {maxIndexMatrixB}");
 
 // ================================================================
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу,
