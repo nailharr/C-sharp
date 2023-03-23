@@ -263,7 +263,40 @@
 // 26(1,0,1) 55(1,1,1)
 // ----------------------------------------------------------------
 
+int[,,] Create3DArray(int lengthArray, int widthArray, int highArray, int minValue, int maxValue)
+{
+    int[,,] matrix3D = new int[lengthArray, widthArray, highArray];
+    for (int i = 0; i < lengthArray; i++)
+    {
+        for (int j = 0; j < widthArray; j++)
+        {
+            for (int k = 0; k < highArray; k++)
+            {
+                matrix3D[i, j, k] = new Random().Next(minValue, maxValue + 1);
+            }
+        }
+    }
+    return matrix3D;
+}
 
+void Show3DArray(int[,,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(2); k++)
+            {
+                Console.Write($" {array[i, j, k]} - ({i},{j},{k}) | ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
+
+int[,,] array3D = Create3DArray(2, 2, 2, 10, 99);
+
+Show3DArray(array3D);
 
 // ================================================================
 // Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4. 
