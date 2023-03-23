@@ -275,82 +275,80 @@
 // 10 09 08 07
 // ----------------------------------------------------------------
 
-int nextNumber = 0;
-int rows = 5;
-int columns = 5;
+// int nextNumber = 0;
+// int rows = 4;
+// int columns = 4;
 
-string GetNextNumber()
-{
-    nextNumber++;
-    return nextNumber.ToString("D2");
-}
-
-// string[,] NewArray()
+// string GetNextNumber()
 // {
-//     string[,] array = new string[rows, columns];
-//     for (int i = 0; i < rows; i++)
-//     {
-//         for (int j = 0; j < columns; j++)
-//         {
-//             array[i, j] = GetNextNumber();
-//         }
-//     }
-//     return array;
+//     nextNumber++;
+//     return nextNumber.ToString("D2");
 // }
 
-string[,] SpiralFillMatrix()
-{
-    string[,] matrix = new string[rows, columns];
-    int rowStart = 0, colStart = 0;
-    int rowEnd = matrix.GetLength(0) - 1;
-    int colEnd = matrix.GetLength(1) - 1;
-    while (rowStart <= rowEnd && colStart <= colEnd)
-    {
-        // LEFT -> RIGHT
-        for (int j = colStart; j <= colEnd; j++)
-        {
-            matrix[rowStart, j] = GetNextNumber();
-        }
-        rowStart++;
-        // TOP -> BOTTOM
-        for (int i = rowStart; i <= rowEnd; i++)
-        {
-            matrix[i, colEnd] = GetNextNumber();
-        }
-        colEnd--;
-        // RIGHT -> LEFT
-        if (colEnd > colStart)
-        {
-            for (int j = colEnd; j >= colStart; j--)
-            {
-                matrix[rowEnd, j] = GetNextNumber();
-            }
-            rowEnd--;
-        }
-        // BOTTOM -> TOP
-        // if (rowEnd > rowStart)
-        // {
-        //     for (int i = rowEnd; i >= rowStart; i--)
-        //     {
-        //         matrix[colEnd, i] = GetNextNumber();
-        //     }
-        //     colEnd++;
-        // }
-    }
-    return matrix;
-}
+// // Последовательное построчное заполнение массива:
+// // string[,] NewArrayStringFill()
+// // {
+// //     string[,] array = new string[rows, columns];
+// //     for (int i = 0; i < rows; i++)
+// //     {
+// //         for (int j = 0; j < columns; j++)
+// //         {
+// //             array[i, j] = GetNextNumber();
+// //         }
+// //     }
+// //     return array;
+// // }
 
-void Show2DArray(string[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i, j] + " ");
-        }
-        Console.WriteLine();
-    }
-}
+// string[,] SpiralFillMatrix() // Корректно работает с квадратными матрицами. Для прямоугольных нужно доработать.
+// {
+//     string[,] matrix = new string[rows, columns];
+//     int rowStart = 0, colStart = 0;
+//     int rowEnd = matrix.GetLength(0) - 1;
+//     int colEnd = matrix.GetLength(1) - 1;
+//     while (rowStart <= rowEnd && colStart <= colEnd)
+//     {
+//         // LEFT -> RIGHT
+//         for (int j = colStart; j <= colEnd; j++)
+//         {
+//             matrix[rowStart, j] = GetNextNumber();
+//         }
+//         rowStart++;
+
+//         // TOP -> BOTTOM
+//         for (int i = rowStart; i <= rowEnd; i++)
+//         {
+//             matrix[i, colEnd] = GetNextNumber();
+//         }
+//         colEnd--;
+
+//         // RIGHT -> LEFT
+//         for (int j = colEnd; j >= colStart; j--)
+//         {
+//             matrix[rowEnd, j] = GetNextNumber();
+//         }
+//         rowEnd--;
+
+//         // BOTTOM -> TOP
+//         for (int i = rowEnd; i >= rowStart; i--)
+//         {
+//             matrix[i, colStart] = GetNextNumber();
+//         }
+//         colStart++;
+//     }
+//     return matrix;
+// }
+
+// void Show2DArray(string[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+// }
 
 
-Show2DArray(SpiralFillMatrix());
+// Show2DArray(SpiralFillMatrix());
