@@ -6,7 +6,18 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 // ----------------------------------------------------------------
 
+// void ShowNumbersFromNToOne(int n)
+// {
+//     if (n >= 1)
+//     {
+//         Console.Write($"{n}, ");
+//         ShowNumbersFromNToOne(n - 1);
+//     }
+// }
 
+// int number = 8;
+
+// ShowNumbersFromNToOne(number);
 
 // ================================================================
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму
@@ -15,6 +26,27 @@
 // M = 4; N = 8. -> 30
 // ----------------------------------------------------------------
 
+// int SumNumbersFromMToN(int m, int n)
+// {
+//     int sum = m;
+//     if (m != n)
+//     {
+//         if (n > m)
+//         {
+//             sum = n + SumNumbersFromMToN(m, n - 1);   
+//         }
+//         if (m >= n)
+//         {
+//             sum = m + SumNumbersFromMToN(m - 1, n);
+//         }
+//     }
+//     return sum;
+// }
+
+// int numberM = 8;
+// int numberN = 5;
+
+// Console.WriteLine(SumNumbersFromMToN(numberM, numberN));
 
 
 // ================================================================
