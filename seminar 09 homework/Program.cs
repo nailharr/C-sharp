@@ -36,7 +36,7 @@ int SumNumbersFromMToN(int m, int n)
         {
             sum = n + SumNumbersFromMToN(m, n - 1);
         }
-        if (m >= n)
+        else if (m > n)
         {
             sum = m + SumNumbersFromMToN(m - 1, n);
         }
@@ -44,11 +44,11 @@ int SumNumbersFromMToN(int m, int n)
     return sum;
 }
 
-int numberM = 4;
-int numberN = 8;
+int numberM = 1;
+int numberN = 15;
 
 if (numberM == numberN)
-    Console.WriteLine("0");
+    Console.WriteLine(numberM);
 else
     Console.WriteLine(SumNumbersFromMToN(numberM, numberN));
 
