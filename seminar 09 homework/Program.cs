@@ -6,18 +6,19 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 // ----------------------------------------------------------------
 
-// void ShowNumbersFromNToOne(int n)
-// {
-//     if (n >= 1)
-//     {
-//         Console.Write($"{n}, ");
-//         ShowNumbersFromNToOne(n - 1);
-//     }
-// }
+void ShowNumbersFromNToOne(int n)
+{
+    if (n >= 1)
+    {
+        Console.Write($"{n}, ");
+        ShowNumbersFromNToOne(n - 1);
+    }
+}
 
-// int number = 8;
+int number = 8;
 
-// ShowNumbersFromNToOne(number);
+ShowNumbersFromNToOne(number);
+Console.WriteLine();
 
 // ================================================================
 // Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму
