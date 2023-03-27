@@ -26,28 +26,30 @@
 // M = 4; N = 8. -> 30
 // ----------------------------------------------------------------
 
-// int SumNumbersFromMToN(int m, int n)
-// {
-//     int sum = m;
-//     if (m != n)
-//     {
-//         if (n > m)
-//         {
-//             sum = n + SumNumbersFromMToN(m, n - 1);   
-//         }
-//         if (m >= n)
-//         {
-//             sum = m + SumNumbersFromMToN(m - 1, n);
-//         }
-//     }
-//     return sum;
-// }
+int SumNumbersFromMToN(int m, int n)
+{
+    int sum = m;
+    if (m != n)
+    {
+        if (n > m)
+        {
+            sum = n + SumNumbersFromMToN(m, n - 1);
+        }
+        if (m >= n)
+        {
+            sum = m + SumNumbersFromMToN(m - 1, n);
+        }
+    }
+    return sum;
+}
 
-// int numberM = 8;
-// int numberN = 4;
+int numberM = 4;
+int numberN = 8;
 
-// Console.WriteLine(SumNumbersFromMToN(numberM, numberN));
-
+if (numberM == numberN)
+    Console.WriteLine("0");
+else
+    Console.WriteLine(SumNumbersFromMToN(numberM, numberN));
 
 // ================================================================
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии.
